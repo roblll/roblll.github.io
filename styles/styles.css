@@ -6,3 +6,17 @@ body {
   color: rgb(28, 28, 30);
   background-color: #f8f9fa;
 }
+#links {
+  margin: 0;
+  padding: 0;
+}
+
+#links > li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 4px;
+}
+
+#links > li > a > img {
+  width: 30px;
+}
