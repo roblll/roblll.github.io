@@ -20,3 +20,13 @@ body {
 #links > li > a > img {
   width: 30px;
 }
+
+#main-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15%;
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
