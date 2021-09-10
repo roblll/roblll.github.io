@@ -3,8 +3,9 @@ body {
   -moz-user-select: none;
   -khtml-user-select: none;
   -ms-user-select: none;
-  color: rgb(28, 28, 30);
+  color: #5f6368;
   background-color: #f8f9fa;
+  font-family: "Open Sans", sans-serif;
 }
 #links {
   margin: 0;
