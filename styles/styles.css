@@ -19,7 +19,7 @@ body {
 }
 
 #links > li > a > img {
-  width: 30px;
+  width: 23px;
 }
 
 #main-container {
@@ -29,5 +29,17 @@ body {
   top: 15%;
   margin: 0 auto;
   width: 500px;
-  text-align: center;
+  /* text-align: center; */
+}
+
+h1 {
+  font-size: 33px;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-size: 23px;
+  font-weight: 400;
+  margin: 0;
 }
