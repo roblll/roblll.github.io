@@ -9,6 +9,7 @@ body {
 #links {
   margin: 0;
   padding: 0;
+  padding-bottom: 15;
 }
 
 #links > li {
@@ -16,8 +17,15 @@ body {
   padding-bottom: 10px;
 }
 
+#links > li > a {
+  text-decoration: none;
+  color: #5f6368;
+  font-size: 15px;
+}
+
 #links > li > a > img {
-  width: 15px;
+  height: 14;
+  padding: 0 10 0 2;
 }
 
 #main-container {
@@ -26,10 +34,12 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width: 330px;
+  width: 150;
+  min-width: 150;
 }
 
 h1 {
-  font-size: 23px;
-  padding-bottom: 23px;
+  font-size: 23;
+  padding-bottom: 23;
+  margin: 0;
 }
