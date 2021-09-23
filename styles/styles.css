@@ -38,6 +38,16 @@ body {
   min-width: 230;
 }
 
+#project-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 330;
+  min-width: 330;
+}
+
 h1 {
   font-size: 23;
   padding-bottom: 30;
