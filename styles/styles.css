@@ -6,6 +6,13 @@ body {
   color: #565a5e;
   background-color: #f8f9fa;
 }
+
+h1 {
+  font-size: 23;
+  padding-bottom: 30;
+  margin: 0;
+}
+
 #links {
   margin: 0;
   padding: 0;
@@ -48,8 +55,7 @@ body {
   min-width: 330;
 }
 
-h1 {
-  font-size: 23;
-  padding-bottom: 30;
+#description {
   margin: 0;
+  padding: 0;
 }
