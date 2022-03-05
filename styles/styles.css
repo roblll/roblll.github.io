@@ -9,7 +9,11 @@ body {
 
 h1 {
   font-size: 23;
-  padding-bottom: 30;
+  margin: 5 0;
+}
+
+h2 {
+  font-size: 15;
   margin: 0;
 }
 
@@ -41,7 +45,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width: 230;
+  width: 255;
   min-width: 230;
 }
 
@@ -71,4 +75,8 @@ h1 {
   justify-content: center;
   width: 330;
   min-width: 330;
+}
+
+#header {
+  margin: 23 0;
 }
