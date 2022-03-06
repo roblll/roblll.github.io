@@ -36,6 +36,7 @@ h2 {
 
 #links > li > a:hover {
   color: #111;
+  font-size: 15.1px;
 }
 
 #links > li > a > img {
@@ -43,9 +44,8 @@ h2 {
   padding: 0 10 0 2;
 }
 
-#links > li > a > img:hover {
-  height: 15;
-  padding: 0 10 0 2;
+#links > li > a:hover > img {
+  height: 14.5;
 }
 
 #main-container {
