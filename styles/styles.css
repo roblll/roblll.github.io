@@ -14,7 +14,7 @@ h1 {
 
 h2 {
   font-size: 15;
-  margin: 0;
+  margin: 7 0;
 }
 
 #links {
@@ -78,5 +78,5 @@ h2 {
 }
 
 #header {
-  margin: 23 0;
+  margin: 0 0;
 }
