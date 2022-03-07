@@ -20,12 +20,11 @@ h2 {
 #links {
   margin: 0;
   padding: 0;
-  padding-bottom: 20;
 }
 
 #links > li {
   list-style: none;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 #links > li > a {
@@ -78,14 +77,16 @@ h2 {
 }
 
 #badges {
+  padding: 0;
   margin: 0 auto;
-  display: flex;
+  display: flexbox;
   flex-direction: row;
   justify-content: center;
   width: 330;
   min-width: 330;
 }
 
-#header {
+.section {
   margin: 0 0;
+  padding-bottom: 8;
 }
