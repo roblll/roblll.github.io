@@ -14,23 +14,35 @@
 
 <body>
   <div id="project-container">
+    <h1>Boggler</h1>
     <div class="section">
-      <h1>Boggler</h1>
-      <p id="description">Mobile app available on iOS and Android.</p>
-      <p id="description">Provides list of solutions to Boggle board.</p>
+      <h2>Description</h2>
+        <p>Instantly find all words in Boggle. Simply take a picture of the board. The app will find all possible words. It will display the total words found, the processed board letters, and the list of all words found categorized by length. Only 3-letter or longer, are listed. This is according to Boggle rules. The app processes the picture and converts it to the letters on the board. It has over 90% accuracy in determining the correct letter. In case the app incorrectly identifies a letter, the user can manually change any letter on the board. The app will then find the words possible with the corrected board. The app is available on iOS and Android.</p>
+        <ul id="badges">
+          <a href="https://apps.apple.com/us/app/boggler/id1609487300"><img src="assets/app-store-badge.png" alt="App Store Badge" id="badge"></a>
+          <a href="#"><img src="assets/google-play-badge.png" alt="Google Play Badge" id="badge"></a>
+        </ul>
     </div>
     <div class="section">
-      <p id="description">Python, Flask, Tensorflow. TypeScript, Expo.</p>
+      <h2>API Implementation</h2>
+      <p>The app sends the image to a Dice Letter Recognition API to determine the correct dice letters.  First the image is cropped and split into 16 smaller images. Then each individual image is processed and passed through a prediction model. The model will output, based on the training data, the letter with the highest probability score. The API was built using the machine learning framework, TensorFlow. Over 10,000 images were used to train the letter recognition model. Finally, the API sends the inferred board back to the mobile app.</p>
+      <p>Python, Flask, TensorFlow, AWS, Docker</p>
+      <ul id="links">
+        <li>
+          <a href="https://github.com/roblll/boggler-api" target="_blank"><img class="icon" src="assets/github-logo.svg" />GitHub</a>
+        </li>
+      </ul>
     </div>
-    <ul id="links">
-      <li>
-        <a href="https://github.com/roblll" target="_blank"><img class="icon" src="assets/github-logo.svg" />GitHub</a>
-      </li>
-    </ul>
-    <ul id="badges">
-      <a href="https://apps.apple.com/us/app/boggler/id1609487300"><img src="assets/app-store-badge.png" alt="App Store Badge" id="badge"></a>
-      <a href="#"><img src="assets/google-play-badge.png" alt="Google Play Badge" id="badge"></a>
-    </ul>
+    <div>
+      <h2>Mobile App</h2>
+      <p>The mobile app uses Trie (Prefix Tree) data structure to efficiently find all possible words on the board. 175,281 words were imported to create the official dictionary. The camera had to be adjusted to consistently frame the board for proper processing. The mobile app was built using the open source frameworks, React Native and Expo. This allows the app to be built simultaneously for iOS and Android.</p>
+      <p>TypeScript, React Native, Expo</p>
+      <ul id="links">
+        <li>
+          <a href="https://github.com/roblll/boggler-mobile" target="_blank"><img class="icon" src="assets/github-logo.svg" />GitHub</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </body>
 
