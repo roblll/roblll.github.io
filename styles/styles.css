@@ -102,3 +102,15 @@ hr {
   text-align: left;
   margin-left: 0;
 }
+
+#app-logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app-logo-image {
+  width: 65;
+  height: 65;
+  margin: 13 0;
+}
