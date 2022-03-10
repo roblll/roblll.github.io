@@ -18,17 +18,30 @@
       <img id="app-logo-image" src="assets/stringbet-logo.png" />
     </div>
     <h1>Stringbet</h1>
-    <p id="description">Poker training mobile app available on iOS and Android.</p>
-    <p id="description">React Native, Expo, TypeScript</p>
-    <ul id="links">
-      <li>
-        <a href="https://github.com/roblll" target="_blank"><img class="icon" src="assets/github-logo.svg" />GitHub</a>
-      </li>
-    </ul>
-    <ul id="badges">
-      <a href="https://apps.apple.com/us/app/stringbet/id1588579265#?platform=iphone"><img src="assets/app-store-badge.png" alt="App Store Badge" id="badge"></a>
-      <a href="https://play.google.com/store/apps/details?id=com.rbzla.stringbet&hl=en_US&gl=US"><img src="assets/google-play-badge.png" alt="Google Play Badge" id="badge"></a>
-    </ul>
+    <div class="section">
+      <p>Mobile app available on iOS and Android</p>
+      <ul id="badges">
+        <a href="https://apps.apple.com/us/app/stringbet/id1588579265"><img src="assets/app-store-badge.png" alt="App Store Badge" id="badge"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.rbzla.stringbet&hl=en_US&gl=US"><img src="assets/google-play-badge.png" alt="Google Play Badge" id="badge"></a>
+      </ul>
+    </div>
+    <hr>
+    <div class="section">
+      <h2>Description</h2>
+        <p>Challenge yourself to memorize all preflop hand rankings and win percentages in Texas Holdem poker. The app randomly shows two cards. The user is tasked to provide the correct rank and win percentage of the current poker hand. The app will determine if the correct answer was provided or not. The correct answer will be displayed to help reinforce memorization. The app provides a list of the correct answers as a reference. Also, the app allows for narrowing or widening the range of poker hands to be randomly selected. This helps to incrementally adjust the difficulty. Finally, stats are recorded to track progress.</p>
+    </div>
+    <hr>
+    <div class="section">
+      <h2>Mobile App Implementation</h2>
+      <p>TypeScript, React Native, Expo</p>
+      <ul id="links">
+        <li>
+          <a href="https://github.com/roblll/stringbet" target="_blank"><img class="icon" src="assets/github-logo.svg" />GitHub</a>
+        </li>
+      </ul>
+      <p>The main user interaction is selecting the hand rank and hand percentage. This was implemented using a customized ScrollPicker component. As there was no scrolling selection component natively included in React Native, an open-source implementation was used. Although, a slight modification was added for aesthetic purposes. The rest of the app was built using built-in components like Modals or some custom-built components like the check button. Lastly, the app will automatically check for over-the-air updates each time the menu is accessed. This makes it more convenient to update the app without needing to resubmit to the App Store. The mobile app was built using the open source frameworks, React Native and Expo. This allows the app to be built simultaneously for iOS and Android.
+        </p>
+    </div>
   </div>
 </body>
 
