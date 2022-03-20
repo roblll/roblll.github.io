@@ -1,8 +1,4 @@
 body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -ms-user-select: none;
   color: #565a5e;
   background-color: #f8f9fa;
 }
