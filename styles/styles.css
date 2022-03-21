@@ -71,9 +71,6 @@ h2 {
   margin: 0 auto;
   display: flexbox;
   flex-direction: row;
-  justify-content: center;
-  width: 330;
-  min-width: 330;
 }
 
 .section {
@@ -109,41 +106,4 @@ hr {
   width: 65;
   height: 65;
   margin: 13 0;
-}
-
-#boxless-access {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#boxless-access > a {
-  text-decoration: none;
-  color: white;
-  padding: 8 8;
-  background-color: black;
-  margin-bottom: 8;
-}
-
-#credentials {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-#credentials > p {
-  margin: 0 10;
-  background-color: black;
-  color: white;
-  padding: 0 0 0 8;
-  margin-top: 8;
-}
-
-#credentials > p > span {
-  display: inline-block;
-  width: 100px;
-  text-align: center;
-  background-color: grey;
-  padding: 8 0;
 }
