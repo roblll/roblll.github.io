@@ -29,6 +29,13 @@
     <div class="section">
       <h2>Description</h2>
         <p>Challenge yourself to memorize all preflop hand rankings and win percentages in Texas Holdem poker. The app randomly shows two cards. The user is tasked to provide the correct rank and win percentage of the current poker hand. The app will determine if the correct answer was provided or not. The correct answer will be displayed to help reinforce memorization. The app provides a list of the correct answers as a reference. Also, the app allows for narrowing or widening the range of poker hands to be randomly selected. This helps to incrementally adjust the difficulty. Finally, stats are recorded to track progress.</p>
+        <div id="images-container">
+          <img id="myImg" src="assets/stringbet-01.png" alt="Snow" style="width:19%; max-width:300px">
+          <img id="myImg" src="assets/stringbet-02.png" alt="Snow" style="width:19%; max-width:300px">
+          <img id="myImg" src="assets/stringbet-03.png" alt="Snow" style="width:19%; max-width:300px">
+          <img id="myImg" src="assets/stringbet-04.png" alt="Snow" style="width:19%; max-width:300px">
+          <img id="myImg" src="assets/stringbet-05.png" alt="Snow" style="width:19%; max-width:300px">
+        </div>
     </div>
     <hr>
     <div class="section">
@@ -43,6 +50,32 @@
         </p>
     </div>
   </div>
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+  </div>
+
+  <script>
+
+    var images = document.getElementById("images-container").children;
+    for (const img of images) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("img01");
+      img.onclick = function(){
+        console.log(img.src)
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+    }
+    
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    
+    </script>
+
 </body>
 
 </html>
