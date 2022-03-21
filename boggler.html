@@ -29,6 +29,14 @@
     <div class="section">
       <h2>Description</h2>
         <p>Instantly find all words in Boggle. Simply take a picture and the app will search the board. It will display the total words found, the inferred board letters, and the list of all words found, categorized by length. Only 3-letter or longer words, are listed. This is according to Boggle rules. The app processes the picture and converts it to the letters on the board. It has over 90% accuracy in determining the correct letter. In case the app incorrectly identifies a letter, the user can manually change any letter on the board. The app will then find the words possible with the corrected board. The app is available on iOS and Android.</p>
+        <div id="images-container">
+          <img id="myImg" src="assets/boggler-01.png" alt="Snow" style="width:16%; max-width:300px">
+          <img id="myImg" src="assets/boggler-02.png" alt="Snow" style="width:16%; max-width:300px">
+          <img id="myImg" src="assets/boggler-03.png" alt="Snow" style="width:16%; max-width:300px">
+          <img id="myImg" src="assets/boggler-04.png" alt="Snow" style="width:16%; max-width:300px">
+          <img id="myImg" src="assets/boggler-05.png" alt="Snow" style="width:16%; max-width:300px">
+          <img id="myImg" src="assets/boggler-06.png" alt="Snow" style="width:16%; max-width:300px">
+        </div>
     </div>
     <hr>
     <div class="section">
@@ -53,6 +61,32 @@
       <p>The mobile app uses a Trie (Prefix Tree) data structure to efficiently find all possible words on the board. The dictionary contains 175,281 words. The camera had to be adjusted to consistently frame the board for proper processing. The mobile app was built using the open source frameworks, React Native and Expo. This allows the app to be built simultaneously for iOS and Android.</p>
     </div>
   </div>
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+  </div>
+
+  <script>
+
+    var images = document.getElementById("images-container").children;
+    for (const img of images) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("img01");
+      img.onclick = function(){
+        console.log(img.src)
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+    }
+    
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    
+    </script>
+
 </body>
 
 </html>
