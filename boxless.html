@@ -29,6 +29,13 @@
     <div class="section">
       <h2>Description</h2>
         <p>Web app that plays a random song based on user-specified options. The options include Billboard rank range, date range, and genre. The backend api performs a webscrape to obtain Billboard and YouTube data. Data is cached into database to increase performance.</p>
+        <div id="images-container">
+          <img id="myImg" src="assets/boxless-01.png" alt="Snow" style="width:19%; max-width:300px">
+          <img id="myImg" src="assets/boxless-01.png" alt="Snow" style="width:19%; max-width:300px">
+          <img id="myImg" src="assets/boxless-01.png" alt="Snow" style="width:19%; max-width:300px">
+          <img id="myImg" src="assets/boxless-01.png" alt="Snow" style="width:19%; max-width:300px">
+          <img id="myImg" src="assets/boxless-01.png" alt="Snow" style="width:19%; max-width:300px">
+        </div>
     </div>
     <hr>
     <div class="section">
@@ -52,6 +59,32 @@
       <p>Implementation Implementation Implementation Implementation Implementation Implementation Implementation Implementation Implementation Implementation Implementation </p>
     </div>
   </div>
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+  </div>
+
+  <script>
+
+    var images = document.getElementById("images-container").children;
+    for (const img of images) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("img01");
+      img.onclick = function(){
+        console.log(img.src)
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+    }
+    
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    
+    </script>
+    
 </body>
 
 </html>
