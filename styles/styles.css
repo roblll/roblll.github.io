@@ -190,3 +190,8 @@ hr {
 #images-container {
   width: 100%;
 }
+
+#boxless-link {
+  color: #faab1a;
+  text-decoration: none;
+}
