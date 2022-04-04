@@ -74,7 +74,7 @@
     <hr>
     <div>
       <h2>Board Images For Testing</h2>
-      <div id="images-container">
+      <div id="images-container2">
         <img id="myImg" src="assets/boggler-test-images-01.jpg" alt="boggler screenshot 1" style="width:24%; max-width:300px">
         <img id="myImg" src="assets/boggler-test-images-02.jpg" alt="boggler screenshot 2" style="width:24%; max-width:300px">
         <img id="myImg" src="assets/boggler-test-images-03.jpg" alt="boggler screenshot 3" style="width:24%; max-width:300px">
@@ -88,6 +88,11 @@
     <img class="modal-content" id="img01">
   </div>
 
+  <div id="myModal2" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img02">
+  </div>
+
   <script>
 
     var images = document.getElementById("images-container").children;
@@ -99,10 +104,25 @@
         modalImg.src = this.src;
       }
     }
+
+    var images2 = document.getElementById("images-container2").children;
+    for (const img of images2) {
+      var modal2 = document.getElementById("myModal2");
+      var modalImg2 = document.getElementById("img02");
+      img.onclick = function(){
+        modal2.style.display = "block";
+        modalImg2.src = this.src;
+      }
+    }
     
     var span = document.getElementsByClassName("close")[0];
     span.onclick = function() { 
       modal.style.display = "none";
+    }
+
+    var span = document.getElementsByClassName("close")[1];
+    span.onclick = function() { 
+      modal2.style.display = "none";
     }
 
     document.onkeydown = function(evt) {
@@ -115,6 +135,7 @@
       }
       if (isEscape) {
         modal.style.display = "none";
+        modal2.style.display = "none";
       }
     };
     
